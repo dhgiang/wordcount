@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <h1>WORD COUNT</h1>
+  <!-- {{ dog }} -->
+  <a href="{% url 'about' %}">
+    <button>About Me</button>
+  </a>
+
+  <form action="{% url 'count' %}">
+    <textarea name="fulltext" id="" cols="40" rows="5">Enter text here</textarea>
+    <br>
+    <input type="submit" value="Count!">
+  </form>
+</body>
+
+</html>
